@@ -1,0 +1,17 @@
+{
+  "name": "claude-code-features-docs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev . --host 127.0.0.1 --port 5173",
+    "build": "vitepress build .",
+    "preview": "vitepress preview . --host 127.0.0.1 --port 4173"
+  },
+  "devDependencies": {
+    "mermaid": "10.9.5",
+    "vitepress": "1.6.4"
+  },
+  "overrides": {
+    "esbuild": "^0.25.0"
+  }
+}
