@@ -26,7 +26,7 @@ Claude Code 的 feature flag 不是“单点开关”，而是一个明确分层
 
 ```mermaid
 flowchart TD
-  A[Build System bun:bundle feature()] -->|DCE keep/remove| B[Compiled CLI Binary]
+  A["Build System bun:bundle feature()"] -->|DCE keep/remove| B[Compiled CLI Binary]
   B --> C[Runtime Feature Read API]
   C -->|getFeatureValue_CACHED_MAY_BE_STALE| D[Disk Cache ~/.claude.json cachedGrowthBookFeatures]
   C -->|initializeGrowthBook + remoteEval| E[GrowthBook API]
